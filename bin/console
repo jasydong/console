@@ -1,0 +1,15 @@
+#!/usr/bin/env php
+<?php
+// application.php
+
+require dirname(__DIR__) . '/vendor/autoload.php';
+
+use Symfony\Component\Console\Application;
+use Command\Sample;
+
+$application = new Application();
+
+// 注册命令
+$application->add(new Sample());
+
+$application->run();
