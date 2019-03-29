@@ -8,21 +8,21 @@ console based on symfony-console
 
 #### first git clone the repos
 
-```sh
+```bash
 git clone https://github.com/jasydong/console.git
 ```
 #### then run
 
-```
+```bash
 cd console
 ```
 
 #### and run 
-```
+```bash
 composer install
 ```
 
 #### and final run
-```
+```bash
 php -f bin/console
 ```
