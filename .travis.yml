@@ -11,6 +11,7 @@ before_script:
   - git clone https://github.com/jasydong/console.git
   - cd console
   - composer install
+  - chmod +x bin/console
 
 # run sample command
 script: bin/console sample:sample
