@@ -1,0 +1,20 @@
+language: php
+
+php:
+  - 7.1
+  - 7.2
+  - 7.3
+
+before_script:
+  - cd ~
+  # git clone jasydong/console
+  - git clone https://github.com/jasydong/console.git
+  - cd console
+  - composer install
+
+# run sample command
+script: bin/console sample:sample
+
+# configure notifications
+notifications:
+  email: "jasydong@qq.com"
