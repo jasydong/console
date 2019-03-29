@@ -4,6 +4,7 @@ namespace Command;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
+use Core\Log;
 
 /**
  * A Sample Console Command
@@ -31,5 +32,7 @@ class Sample extends Command
 
         // outputs a message
         $output->writeln('Hello, Sample Console Command!');
+        // add a log
+        Log::info('Sample Console Command Executed');
     }
 }

@@ -1,12 +1,14 @@
 {
     "require": {
-        "symfony/console": "^4.2"
+        "symfony/console": "^4.2",
+        "monolog/monolog": "^1.24"
     },
 
     "autoload": {
     	"files": [],
         "psr-4": {
-            "Command\\": "src/command"
+            "Command\\": "src/command",
+            "Core\\": "src/core"
         }
     }
 }
